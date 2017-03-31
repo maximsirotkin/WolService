@@ -67,7 +67,8 @@ namespace WolService
                             }
                         case Params.Addr:
                             {
-                                string macPattern = @"[A-F0-9]{2}[-:]{1}[A-F0-9]{2}[-:]{1}[A-F0-9]{2}[-:]{1}[A-F0-9]{2}[-:]{1}[A-F0-9]{2}[-:]{1}[A-F0-9]{2}";
+                                string macPattern = @"[A-F0-9]{2}[-:]{1}[A-F0-9]{2}[-:]{1}[A-F0-9]{2}
+                                                    [-:]{1}[A-F0-9]{2}[-:]{1}[A-F0-9]{2}[-:]{1}[A-F0-9]{2}";
                                 try
                                 {
                                     if (Regex.Match(arg, macPattern, RegexOptions.IgnoreCase).Success)
